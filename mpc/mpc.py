@@ -10,7 +10,7 @@ from mpc.dynamics_constraints import (
     DynamicsFunction,
 )
 from mpc.obstacle_constraints import (
-    add_obstacle_constraints,
+    make_obstacle_cost,
     ObstacleFunction,
 )
 
@@ -107,8 +107,7 @@ def construct_MPC_problem(
 
     for obstacle_fn, collision_margin in obstacle_fns:
         for t in range(1, horizon + 1):
-            obstacle_sdf = obstacle_fn(x[t, :])
-            cost += casadi.exp(1e2 * (collision_margin - obstacle_sdf))
+            cost += make_obstacle_cost(obstacle_fn, x[t, :], collision_margin)
 
     opti.minimize(cost)
 

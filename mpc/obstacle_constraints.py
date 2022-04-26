@@ -14,7 +14,7 @@ def add_obstacle_constraints(
     x_now: casadi.MX,
     margin: float,
 ):
-    """Add the given obstacle constraints at every step of the given problem.
+    """Add the given obstacle constraints at one step of the given problem.
 
     args:
         opti: the casadi optimization problem to add the constraints to
@@ -29,6 +29,27 @@ def add_obstacle_constraints(
 
     # Constrain the distance to the obstacle to be greater than the margin
     opti.subject_to(obstacle_sdf >= margin)
+
+
+def make_obstacle_cost(
+    obstacle_sdf_fn: ObstacleFunction,
+    x_now: casadi.MX,
+    margin: float,
+):
+    """Make a cost encouraging collision avoidance
+
+    args:
+        obstacle_sdf_fn: the function specifying the obstacle. Takes current state and
+            returns the signed distance to the obstacle (+ is outside the obstacle,
+            - is inside).
+        x_now: current state
+        margin: the distance by which we need to avoid the obstacle
+    """
+    # Get the obstacle signed distance as a casadi expression
+    obstacle_sdf = obstacle_sdf_fn(x_now)
+
+    # Add a cost that is positive if we are too close
+    return casadi.exp(1e2 * (margin - obstacle_sdf))
 
 
 def hypersphere_sdf(

@@ -69,7 +69,8 @@ def quad6d_dynamics(x: Variable, u: Variable):
 
     args:
         x: state variables
-        u: control inputs
+        u: control inputs [theta, phi, tau]. Tau is defined as the excess/surplus
+            acceleration relative to gravity.
     """
     # unpack variables
     vx = x[3]
@@ -78,7 +79,6 @@ def quad6d_dynamics(x: Variable, u: Variable):
     theta = u[0]
     phi = u[1]
     tau = u[2]
-    theta, phi, tau = u
 
     # compute derivatives
     g = 9.81

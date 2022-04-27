@@ -1,5 +1,5 @@
 """Define functions to solve MPC problems"""
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Optional
 
 import casadi
 import numpy as np
@@ -21,7 +21,11 @@ def solve_MPC_problem(
     u0_variables: casadi.MX,
     current_state: np.ndarray,
     verbose: bool = False,
-):
+    x_variables: Optional[casadi.MX] = None,
+    u_variables: Optional[casadi.MX] = None,
+    x_guess: Optional[np.ndarray] = None,
+    u_guess: Optional[np.ndarray] = None,
+) -> Tuple[bool, np.ndarray, Optional[np.ndarray], Optional[np.ndarray]]:
     """Solve a receding-horizon MPC problem from the given state.
 
     Modifies opti; a copy should be passed
@@ -33,13 +37,24 @@ def solve_MPC_problem(
             the first timestep in the MPC problem
         current_state: the current state of the system
         verbose: if True, print the results of the optimization. Defaults to False
+        x_variables, u_variables, x_guess, and u_guess allow you to provide an initial
+            guess for x and u (often from the previous solution). If not provided, use
+            the default casadi initial guess (zeros).
     returns:
         - a boolean indicating whether the solver was successful or not
         - the optimal control action (not meaningful if the first return value is False)
+        - the optimal state trajectory (to be used for warm-starting the next solve)
+        - the optimal control trajectory (to be used for warm-starting the next solve)
     """
     # Add a constraint for the start state
     for i in range(x0_variables.shape[1]):
         opti.subject_to(x0_variables[0, i] == current_state[i])
+
+    # Set initial guesses if provided
+    if x_variables is not None and x_guess is not None:
+        opti.set_initial(x_variables, x_guess)
+    if u_variables is not None and u_guess is not None:
+        opti.set_initial(u_variables, u_guess)
 
     # Define optimizer setting
     p_opts: Dict[str, Any] = {"expand": True}
@@ -54,10 +69,20 @@ def solve_MPC_problem(
     try:
         solution = opti.solve()
     except RuntimeError:
-        return False, np.zeros(u0_variables.shape)
+        return (
+            False,
+            np.zeros(u0_variables.shape),
+            None,
+            None,
+        )
 
     # Return the control input at the first timestep
-    return solution.stats()["success"], solution.value(u0_variables)
+    return (
+        solution.stats()["success"],
+        solution.value(u0_variables),
+        solution.value(x_variables) if x_variables is not None else None,
+        solution.value(u_variables) if u_variables is not None else None,
+    )
 
 
 def construct_MPC_problem(
@@ -70,7 +95,7 @@ def construct_MPC_problem(
     running_cost_fn: RunningCostFunction,
     terminal_cost_fn: TerminalCostFunction,
     control_bounds: List[float],
-) -> casadi.Opti:
+) -> Tuple[casadi.Opti, casadi.MX, casadi.MX, casadi.MX, casadi.MX]:
     """
     Define a casadi Opti object containing a receding-horizon obstacle-avoidance MPC
     problem.
@@ -92,6 +117,8 @@ def construct_MPC_problem(
         - the MPC opti problem
         - the variables for the initial state
         - the variables for the initial control action
+        - the variables for all states
+        - the variables for all control actions
     """
     # Create the problem object
     opti = casadi.Opti()
@@ -125,4 +152,4 @@ def construct_MPC_problem(
         add_dynamics_constraints(opti, dynamics_fn, x[t, :], u[t, :], x[t + 1, :], dt)
 
     # Return the MPC problem and the initial state and control variables
-    return opti, x[0, :], u[0, :]
+    return opti, x[0, :], u[0, :], x, u

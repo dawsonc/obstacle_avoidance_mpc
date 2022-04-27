@@ -41,7 +41,7 @@ def test_dubins_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]
     control_bounds = [0.5, np.pi / 2]
 
     # Define MPC problem
-    opti, x0_variables, u0_variables = construct_MPC_problem(
+    opti, x0_variables, u0_variables, x_variables, u_variables = construct_MPC_problem(
         n_states,
         n_controls,
         horizon,
@@ -66,6 +66,8 @@ def test_dubins_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]
         dynamics_fn,
         n_steps,
         verbose=False,
+        x_variables=x_variables,
+        u_variables=u_variables,
     )
 
 

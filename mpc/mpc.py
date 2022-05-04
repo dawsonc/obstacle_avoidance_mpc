@@ -53,8 +53,12 @@ def solve_MPC_problem(
     # Set initial guesses if provided
     if x_variables is not None and x_guess is not None:
         opti.set_initial(x_variables, x_guess)
+    else:
+        opti.set_initial(x_variables, 1e-3 * np.random.uniform(size=x_variables.shape))
     if u_variables is not None and u_guess is not None:
         opti.set_initial(u_variables, u_guess)
+    else:
+        opti.set_initial(u_variables, 1e-3 * np.random.uniform(size=u_variables.shape))
 
     # Define optimizer setting
     p_opts: Dict[str, Any] = {"expand": True}

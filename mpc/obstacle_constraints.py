@@ -69,7 +69,9 @@ def hypersphere_sdf(
     returns:
         the signed distance to this cylinder
     """
-    distances_to_center = [x[0, i] - center[i] for i in indices]
+    distances_to_center = [
+        x[0, state_idx] - center[i] for i, state_idx in enumerate(indices)
+    ]
     squared_distances = [d ** 2 for d in distances_to_center]
     signed_distance = casadi.sqrt(sum(squared_distances)) - radius
 

@@ -64,3 +64,19 @@ def squared_error_terminal_cost(
         Q = np.eye(x.shape[1])
 
     return casadi.bilin(Q, x - x_goal, x - x_goal)
+
+
+def distance_travelled_terminal_cost(
+    x: casadi.MX, direction: np.ndarray
+) -> casadi.MX:
+    """Returns the distance travelled along the given direction
+
+    args:
+        x: the current state
+        direction: the goal direction of travel
+    returns:
+        -x^T direction
+    """
+    direction = direction.reshape(x.shape)
+
+    return -casadi.dot(x, direction)

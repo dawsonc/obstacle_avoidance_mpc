@@ -4,11 +4,20 @@ from typing import Tuple
 import numpy as np
 import matplotlib.pyplot as plt
 
-from mpc.costs import lqr_running_cost, squared_error_terminal_cost
+from mpc.costs import (
+    lqr_running_cost,
+    distance_travelled_terminal_cost,
+    squared_error_terminal_cost,
+)
 from mpc.dynamics_constraints import quad6d_dynamics
 from mpc.mpc import construct_MPC_problem
 from mpc.obstacle_constraints import hypersphere_sdf
 from mpc.simulator import simulate
+
+
+radius = 0.2
+margin = 0.1
+center = [0.0, 1e-5, 0.0]
 
 
 def test_quad_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
@@ -25,17 +34,16 @@ def test_quad_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     dynamics_fn = quad6d_dynamics
 
     # Define obstacle as a hypercylinder (a sphere in xyz and independent of velocity)
-    radius = 0.2
-    margin = 0.1
-    center = [-1.0, 0.0, 0.0]
     obstacle_fns = [(lambda x: hypersphere_sdf(x, radius, [0, 1, 2], center), margin)]
 
-    # Define costs
-    x_goal = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+    # Define costs to make the quad go to the right
+    x_goal = np.array([1.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+    goal_direction = np.array([1.0, 0.0, 0.0, 0.0, 0.0, 0.0])
     running_cost_fn = lambda x, u: lqr_running_cost(
-        x, u, x_goal, dt * np.diag([1.0, 1.0, 1.0, 0.0, 0.0, 0.0]), 1 * np.eye(3)
+        x, u, x_goal, dt * np.diag([0.0, 0.0, 0.0, 0.0, 0.0, 0.0]), 1 * np.eye(3)
     )
-    terminal_cost_fn = lambda x: squared_error_terminal_cost(x, x_goal)
+    terminal_cost_fn = lambda x: distance_travelled_terminal_cost(x, goal_direction)
+    # terminal_cost_fn = lambda x: squared_error_terminal_cost(x, x_goal)
 
     # Define control bounds
     control_bounds = [np.pi / 10, np.pi / 10, 2.0]
@@ -56,7 +64,7 @@ def test_quad_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     # -------------------------------------------
     # Simulate and return the results
     # -------------------------------------------
-    n_steps = 50
+    n_steps = 20
     return simulate(
         opti,
         x0_variables,
@@ -73,40 +81,30 @@ def test_quad_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
 
 
 def run_and_plot_quad_mpc():
-    x0s = [
-        np.array([-2.0, 0.0, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, 0.1, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, 0.2, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, 0.3, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, 0.4, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, 0.5, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, -0.1, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, -0.2, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, -0.3, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, -0.4, 0.0, 0.0, 0.0, 0.0]),
-        np.array([-2.0, -0.5, 0.0, 0.0, 0.0, 0.0]),
-    ]
+    ys = np.linspace(-0.5, 0.5, 8)
+    xs = np.linspace(-1.0, -0.3, 8)
+    x0s = []
+    for y in ys:
+        for x in xs:
+            x0s.append(np.array([x, y, 0.0, 0.0, 0.0, 0.0]))
 
     fig = plt.figure(figsize=plt.figaspect(1.0))
     ax_xy = fig.add_subplot(1, 2, 1)
     ax_xz = fig.add_subplot(1, 2, 2)
-    ax_xz.plot([], [], "ro", label="Start")
+    # ax_xz.plot([], [], "ro", label="Start")
 
     for x0 in x0s:
         # Run the MPC
         _, x, u = test_quad_mpc(x0)
 
         # Plot it (in x-y plane)
-        ax_xy.plot(x0[0], x0[1], "ro")
-        ax_xy.plot(x[:, 0], x[:, 1], "r-")
+        # ax_xy.plot(x0[0], x0[1], "ro")
+        ax_xy.plot(x[:, 0], x[:, 1], "r-", linewidth=1)
         # and in (x-z plane)
-        ax_xz.plot(x0[0], x0[2], "ro")
-        ax_xz.plot(x[:, 0], x[:, 2], "r-")
+        # ax_xz.plot(x0[0], x0[2], "ro")
+        ax_xz.plot(x[:, 0], x[:, 2], "r-", linewidth=1)
 
     # Plot obstacle
-    radius = 0.2
-    margin = 0.1
-    center = [-1.0, 0.0, 0.0]
     theta = np.linspace(0, 2 * np.pi, 100)
     obs_x = radius * np.cos(theta) + center[0]
     obs_y = radius * np.sin(theta) + center[1]
@@ -122,9 +120,9 @@ def run_and_plot_quad_mpc():
     ax_xz.set_xlabel("x")
     ax_xz.set_ylabel("z")
 
-    ax_xy.set_xlim([-2.5, 0.5])
+    ax_xy.set_xlim([-1.5, 1.5])
     ax_xy.set_ylim([-1.0, 1.0])
-    ax_xz.set_xlim([-2.5, 0.5])
+    ax_xz.set_xlim([-1.5, 1.5])
     ax_xz.set_ylim([-1.0, 1.0])
 
     ax_xy.set_aspect("equal")
@@ -135,5 +133,23 @@ def run_and_plot_quad_mpc():
     plt.show()
 
 
+def plot_sdf():
+    sdf_fn = lambda x: hypersphere_sdf(x, radius, [0, 1, 2], center)
+    xs = np.linspace(-1.0, 1.0, 200)
+    ys = np.linspace(-1.0, 1.0, 200)
+    X, Y = np.meshgrid(xs, ys)
+    Z = np.zeros_like(X)
+    for i, x in enumerate(xs):
+        for j, y in enumerate(ys):
+            state = np.array([[x, y, 0.0, 0.0, 0.0, 0.0]])
+            sdf = sdf_fn(state)
+            Z[j, i] = np.exp(1e2 * (margin - sdf))
+
+    plt.contourf(X, Y, Z)
+    plt.colorbar()
+    plt.show()
+
+
 if __name__ == "__main__":
     run_and_plot_quad_mpc()
+    # plot_sdf()

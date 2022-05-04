@@ -2,36 +2,35 @@
 from typing import Tuple
 
 import numpy as np
+import torch
 import matplotlib.pyplot as plt
 
 from mpc.costs import (
     lqr_running_cost,
     distance_travelled_terminal_cost,
-    squared_error_terminal_cost,
 )
 from mpc.dynamics_constraints import quad6d_dynamics
-from mpc.mpc import construct_MPC_problem
+from mpc.mpc import construct_MPC_problem, solve_MPC_problem
 from mpc.obstacle_constraints import hypersphere_sdf
-from mpc.simulator import simulate_mpc
+from mpc.simulator import simulate_nn
+
+from mpc.nn import PolicyCloningModel
 
 
 radius = 0.2
 margin = 0.1
 center = [0.0, 1e-5, 0.0]
+n_states = 6
+n_controls = 3
+horizon = 20
+dt = 0.1
+dynamics_fn = quad6d_dynamics
 
 
-def test_quad_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """Run a test of obstacle avoidance MPC with a quad and return the results"""
+def define_quad_mpc_expert():
     # -------------------------------------------
-    # Define the problem
+    # Define the MPC problem
     # -------------------------------------------
-    n_states = 6
-    n_controls = 3
-    horizon = 20
-    dt = 0.1
-
-    # Define dynamics
-    dynamics_fn = quad6d_dynamics
 
     # Define obstacle as a hypercylinder (a sphere in xyz and independent of velocity)
     obstacle_fns = [(lambda x: hypersphere_sdf(x, radius, [0, 1, 2], center), margin)]
@@ -61,26 +60,63 @@ def test_quad_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
         control_bounds,
     )
 
+    # Wrap the MPC problem to accept a tensor and return a tensor
+    def mpc_expert(current_state: torch.Tensor) -> torch.Tensor:
+        _, control_output, _, _ = solve_MPC_problem(
+            opti.copy(),
+            x0_variables,
+            u0_variables,
+            current_state.detach().numpy(),
+        )
+
+        return torch.from_numpy(control_output)
+
+    return mpc_expert
+
+
+def clone_quad_mpc(train=True):
     # -------------------------------------------
-    # Simulate and return the results
+    # Clone the MPC policy
     # -------------------------------------------
-    n_steps = 20
-    return simulate_mpc(
-        opti,
-        x0_variables,
-        u0_variables,
-        x0,
-        dt,
-        dynamics_fn,
-        n_steps,
-        verbose=False,
-        x_variables=x_variables,
-        u_variables=u_variables,
-        substeps=10,
+    mpc_expert = define_quad_mpc_expert()
+    hidden_layers = 2
+    hidden_layer_width = 32
+    state_space = [
+        (-1.5, 1.5),  # px
+        (-1.0, 1.0),  # py
+        (-1.0, 1.0),  # pz
+        (-1.0, 1.0),  # vx
+        (-1.0, 1.0),  # vy
+        (-1.0, 1.0),  # vz
+    ]
+    cloned_policy = PolicyCloningModel(
+        hidden_layers,
+        hidden_layer_width,
+        n_states,
+        n_controls,
+        state_space,
+        load_from_file="mpc/tests/data/cloned_quad_policy.pth",
     )
 
+    n_pts = int(1e5)
+    n_epochs = 50
+    learning_rate = 1e-3
+    if train:
+        cloned_policy.clone(
+            mpc_expert,
+            n_pts,
+            n_epochs,
+            learning_rate,
+            save_path="mpc/tests/data/cloned_quad_policy.pth",
+        )
 
-def run_and_plot_quad_mpc():
+    return cloned_policy
+
+
+def simulate_and_plot(policy):
+    # -------------------------------------------
+    # Plot a rollout of the cloned
+    # -------------------------------------------
     ys = np.linspace(-0.5, 0.5, 8)
     xs = np.linspace(-1.0, -0.3, 8)
     x0s = []
@@ -91,11 +127,17 @@ def run_and_plot_quad_mpc():
     fig = plt.figure(figsize=plt.figaspect(1.0))
     ax_xy = fig.add_subplot(1, 2, 1)
     ax_xz = fig.add_subplot(1, 2, 2)
-    # ax_xz.plot([], [], "ro", label="Start")
 
+    n_steps = 20
     for x0 in x0s:
-        # Run the MPC
-        _, x, u = test_quad_mpc(x0)
+        _, x, u = simulate_nn(
+            policy,
+            x0,
+            dt,
+            dynamics_fn,
+            n_steps,
+            substeps=10,
+        )
 
         # Plot it (in x-y plane)
         # ax_xy.plot(x0[0], x0[1], "ro")
@@ -133,23 +175,6 @@ def run_and_plot_quad_mpc():
     plt.show()
 
 
-def plot_sdf():
-    sdf_fn = lambda x: hypersphere_sdf(x, radius, [0, 1, 2], center)
-    xs = np.linspace(-1.0, 1.0, 200)
-    ys = np.linspace(-1.0, 1.0, 200)
-    X, Y = np.meshgrid(xs, ys)
-    Z = np.zeros_like(X)
-    for i, x in enumerate(xs):
-        for j, y in enumerate(ys):
-            state = np.array([[x, y, 0.0, 0.0, 0.0, 0.0]])
-            sdf = sdf_fn(state)
-            Z[j, i] = np.exp(1e2 * (margin - sdf))
-
-    plt.contourf(X, Y, Z)
-    plt.colorbar()
-    plt.show()
-
-
 if __name__ == "__main__":
-    run_and_plot_quad_mpc()
-    # plot_sdf()
+    policy = clone_quad_mpc(train=False)
+    simulate_and_plot(policy)

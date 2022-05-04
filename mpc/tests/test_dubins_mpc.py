@@ -8,7 +8,7 @@ from mpc.costs import lqr_running_cost, squared_error_terminal_cost
 from mpc.dynamics_constraints import dubins_car_dynamics
 from mpc.mpc import construct_MPC_problem
 from mpc.obstacle_constraints import hypersphere_sdf
-from mpc.simulator import simulate
+from mpc.simulator import simulate_mpc
 
 
 def test_dubins_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
@@ -57,7 +57,7 @@ def test_dubins_mpc(x0: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]
     # Simulate and return the results
     # -------------------------------------------
     n_steps = 50
-    return simulate(
+    return simulate_mpc(
         opti,
         x0_variables,
         u0_variables,

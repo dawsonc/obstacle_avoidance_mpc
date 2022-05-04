@@ -8,6 +8,7 @@ requirements = [
     "numpy",
     "seaborn",
     "tqdm",
+    "torch",
 ]
 
 dev_requirements = [

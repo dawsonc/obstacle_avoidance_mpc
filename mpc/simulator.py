@@ -20,8 +20,6 @@ def simulate(
     verbose: bool = False,
     x_variables: Optional[casadi.MX] = None,
     u_variables: Optional[casadi.MX] = None,
-    x_guess: Optional[np.ndarray] = None,
-    u_guess: Optional[np.ndarray] = None,
     substeps: int = 1,
 ):
     """

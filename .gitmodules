@@ -1,0 +1,3 @@
+[submodule "NNet"]
+	path = NNet
+	url = git@github.com:sisl/NNet.git

@@ -9,6 +9,7 @@ requirements = [
     "seaborn",
     "tqdm",
     "torch",
+    "onnx"
 ]
 
 dev_requirements = [

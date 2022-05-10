@@ -1,9 +1,9 @@
 """Test the obstacle avoidance MPC for a quadrotor"""
-from typing import Tuple
-
 import numpy as np
 import torch
 import matplotlib.pyplot as plt
+
+from NNet.converters.onnx2nnet import onnx2nnet
 
 from mpc.costs import (
     lqr_running_cost,
@@ -13,6 +13,7 @@ from mpc.dynamics_constraints import quad6d_dynamics
 from mpc.mpc import construct_MPC_problem, solve_MPC_problem
 from mpc.obstacle_constraints import hypersphere_sdf
 from mpc.simulator import simulate_nn
+from mpc.network_utils import pytorch_to_nnet
 
 from mpc.nn import PolicyCloningModel
 
@@ -25,6 +26,15 @@ n_controls = 3
 horizon = 20
 dt = 0.1
 dynamics_fn = quad6d_dynamics
+
+state_space = [
+    (-1.5, 1.5),  # px
+    (-1.0, 1.0),  # py
+    (-1.0, 1.0),  # pz
+    (-1.0, 1.0),  # vx
+    (-1.0, 1.0),  # vy
+    (-1.0, 1.0),  # vz
+]
 
 
 def define_quad_mpc_expert():
@@ -81,14 +91,6 @@ def clone_quad_mpc(train=True):
     mpc_expert = define_quad_mpc_expert()
     hidden_layers = 2
     hidden_layer_width = 32
-    state_space = [
-        (-1.5, 1.5),  # px
-        (-1.0, 1.0),  # py
-        (-1.0, 1.0),  # pz
-        (-1.0, 1.0),  # vx
-        (-1.0, 1.0),  # vy
-        (-1.0, 1.0),  # vz
-    ]
     cloned_policy = PolicyCloningModel(
         hidden_layers,
         hidden_layer_width,
@@ -175,6 +177,21 @@ def simulate_and_plot(policy):
     plt.show()
 
 
+def save_to_onnx(policy):
+    """Save to an onnx file"""
+    save_path = "mpc/tests/data/cloned_quad_policy.onnx"
+    pytorch_to_nnet(policy, n_states, n_controls, save_path)
+
+    input_mins = [state_range[0] for state_range in state_space]
+    input_maxes = [state_range[1] for state_range in state_space]
+    means = [0.5 * (state_range[0] + state_range[1]) for state_range in state_space]
+    means += [0.0]
+    ranges = [state_range[1] - state_range[0] for state_range in state_space]
+    ranges += [1.0]
+    onnx2nnet(save_path, input_mins, input_maxes, means, ranges)
+
+
 if __name__ == "__main__":
     policy = clone_quad_mpc(train=False)
+    save_to_onnx(policy)
     simulate_and_plot(policy)

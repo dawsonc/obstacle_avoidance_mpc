@@ -97,7 +97,7 @@ def clone_quad_mpc(train=True):
         n_states,
         n_controls,
         state_space,
-        # load_from_file="mpc/tests/data/cloned_quad_policy.pth",
+        load_from_file="mpc/tests/data/cloned_quad_policy.pth",
     )
 
     n_pts = int(1e5)

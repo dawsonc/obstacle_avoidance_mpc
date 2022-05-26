@@ -122,7 +122,9 @@ class PolicyCloningModel(torch.nn.Module):
 
         # Make a loss function and optimizer
         mse_loss_fn = torch.nn.MSELoss(reduction="mean")
-        optimizer = torch.optim.Adam(self.parameters(), lr=learning_rate)
+        optimizer = torch.optim.Adam(
+            self.parameters(), lr=learning_rate
+        )
 
         # Optimize in mini-batches
         for epoch in range(n_epochs):
@@ -141,6 +143,13 @@ class PolicyCloningModel(torch.nn.Module):
 
                 # Compute the loss and backpropagate
                 loss = mse_loss_fn(u_predicted, u_expert_batch)
+
+                # Add L1 regularization
+                for layer in self.policy_nn:
+                    if not hasattr(layer, "weight"):
+                        continue
+                    loss += 0.001 * learning_rate * torch.norm(layer.weight, p=1)
+
                 optimizer.zero_grad()
                 loss.backward()
                 optimizer.step()

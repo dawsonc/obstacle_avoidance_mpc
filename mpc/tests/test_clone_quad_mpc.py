@@ -97,7 +97,7 @@ def clone_quad_mpc(train=True):
         n_states,
         n_controls,
         state_space,
-        load_from_file="mpc/tests/data/cloned_quad_policy.pth",
+        # load_from_file="mpc/tests/data/cloned_quad_policy.pth",
     )
 
     n_pts = int(1e5)
@@ -109,7 +109,7 @@ def clone_quad_mpc(train=True):
             n_pts,
             n_epochs,
             learning_rate,
-            save_path="mpc/tests/data/cloned_quad_policy.pth",
+            save_path="mpc/tests/data/cloned_quad_policy_weight_decay.pth",
         )
 
     return cloned_policy
@@ -179,7 +179,7 @@ def simulate_and_plot(policy):
 
 def save_to_onnx(policy):
     """Save to an onnx file"""
-    save_path = "mpc/tests/data/cloned_quad_policy.onnx"
+    save_path = "mpc/tests/data/cloned_quad_policy_weight_decay.onnx"
     pytorch_to_nnet(policy, n_states, n_controls, save_path)
 
     input_mins = [state_range[0] for state_range in state_space]
@@ -192,6 +192,6 @@ def save_to_onnx(policy):
 
 
 if __name__ == "__main__":
-    policy = clone_quad_mpc(train=False)
+    policy = clone_quad_mpc(train=True)
     save_to_onnx(policy)
     simulate_and_plot(policy)

@@ -1,0 +1,508 @@
+pytorch1.11.0:”Ë
+˜
+onnx::MatMul_0
+onnx::MatMul_36onnx::Add_14MatMul_0"MatMul2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+Ù
+policy_nn.input_linear.bias
+onnx::Add_14inputAdd_1"Add2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+œ
+inputonnx::MatMul_16Relu_2"Relu2¶/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/functional.py(1442): relu
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/activation.py(98): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+¯
+onnx::MatMul_16
+onnx::MatMul_37onnx::Add_18MatMul_3"MatMul2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+¯
+policy_nn.layer_0_linear.bias
+onnx::Add_18input.3Add_4"Add2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+—
+input.3onnx::MatMul_20Relu_5"Relu2¶/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/functional.py(1442): relu
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/activation.py(98): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+¯
+onnx::MatMul_20
+onnx::MatMul_38onnx::Add_22MatMul_6"MatMul2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+¯
+policy_nn.layer_1_linear.bias
+onnx::Add_22input.7Add_7"Add2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+—
+input.7onnx::MatMul_24Relu_8"Relu2¶/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/functional.py(1442): relu
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/activation.py(98): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+¯
+onnx::MatMul_24
+onnx::MatMul_39onnx::Add_26MatMul_9"MatMul2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+˙
+policy_nn.layer_2_linear.bias
+onnx::Add_26input.11Add_10"Add2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+”
+input.11onnx::MatMul_28Relu_11"Relu2¶/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/functional.py(1442): relu
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/activation.py(98): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+˘
+onnx::MatMul_28
+onnx::MatMul_40onnx::Add_30	MatMul_12"MatMul2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+˙
+policy_nn.layer_3_linear.bias
+onnx::Add_30input.15Add_13"Add2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+”
+input.15onnx::MatMul_32Relu_14"Relu2¶/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/functional.py(1442): relu
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/activation.py(98): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+˘
+onnx::MatMul_32
+onnx::MatMul_41onnx::Add_34	MatMul_15"MatMul2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+
+Û
+policy_nn.output_linear.bias
+onnx::Add_3435Add_16"Add2≥/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/linear.py(103): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/container.py(141): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/nn.py(77): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1098): _slow_forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(118): wrapper
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(127): forward
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/nn/modules/module.py(1110): _call_impl
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/jit/_trace.py(1166): _get_trace_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(391): _trace_and_get_graph_from_model
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(440): _create_jit_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(499): _model_to_graph
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(719): _export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/utils.py(118): export
+/home/cbd/miniconda3/envs/obstacle_avoidance_mpc/lib/python3.9/site-packages/torch/onnx/__init__.py(305): export
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/network_utils.py(12): pytorch_to_nnet
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(231): save_to_onnx
+/home/cbd/src/mit/obstacle_avoidance_mpc/mpc/tests/test_clone_quad_mpc.py(256): <module>
+torch-jit-export*§ Bpolicy_nn.input_linear.biasJÄ{ﬂ=eú/ø£æH?‡î2øÅáY?èø£æ ?‡nﬂ>MêAøbπ˘Ω`¸–>Û[™æ"°¡>´D?2©?Y`ø‹3~?ø#ºty¢=¡”?*oæS<ãøÖ◊ø ∑3øÛ>¨SúºE;´æ«G≥>f¸°æLzaøJæ§¿æ*¶ Bpolicy_nn.layer_0_linear.biasJÄAõ2ø©Ï(øäáΩΩï^π´˚ÇæA»ºæaˆræ©]ûæÅ{Ô>EÅæµSâæµæ“»Ö=ÄÖ>ã¯∞=ñSF>Úº©'Køê∂:?ñÕã>%ã7øHî>QíΩvπƒæò ¸>Ù$°>nıæu\[øË˛Uæyœ◊=
+Oè>≈Zo=*¶ Bpolicy_nn.layer_1_linear.biasJÄkYXº§,?‚æ›íÓΩ∏:À=s≤Î=÷?c◊•=ü˛˜>Â0??·,‚>â†ìæ>‡>Z@±>*ËÛ=ëﬁ ?Übxæ‹Ü˚æs@xæàÀ9?(-ûæt?Êêﬁ>W 7>Á≥fΩé„=›?ÁÇ"æ3$ˆ>˙q√ΩÛØæ=fM=*¶ Bpolicy_nn.layer_2_linear.biasJÄÈ‰æ˙ß>©”m>L–Ç>LÑÉæ0ñPæ◊¯;;~=yTΩVZ<√ï}=∆1 >La∞º¬Næ!–Ó=‰Üﬁ>æ⁄ºQJi<¯L<6‰3Ωï’àæi	æìpSæFWƒ>E>πÅƒ>ºÜæôÀ=’º≥>í≥æ<––uæ
+%s<*¶ Bpolicy_nn.layer_3_linear.biasJÄ+W˛º`$à>ìzøwo9;ê”ë>∞¡v>8uMæ”Næﬂı/>aãu=ÅÜΩböTæ±[æRëD>ÃS!æê€=æâ=ÆØ>πæe)Eæﬁ@ãΩz˝ã>óAAæ™≥öΩ^æ5¶F>ì”>Î©>[g>˚óæ≈C|>Ppæ*0Bpolicy_nn.output_linear.biasJ§
+Ã<˙©= =*ö Bonnx::MatMul_36JÄﬂZN?ÈπΩà•ˇæX'æ/M?âr
+>A®Ñ>L‰$æ&Ïøˇ]º>r‡=&§¶æŒ∏O>˛ö>í?4˝˜æwP∑ΩA%?2¡ç>—V6<#ÛºâÅ6?ƒú2æ~∫◊>à3Hæ<˚ø%D¶>·€;?Ù[$øıÏˆΩÄ9æ£|≤æ	¢˛æñüDæ~"øtVøAqø»dâ>‚+2?P]æj6^> †*?SÃÇ?k±%?9Å'?ÙKV<>ºÖ?ﬂß æ‚»*æ`ÓÄøÔ§æ¥Y∞ª	c,ø¶Ã∆>πÜøûj[?Ä£ƒæ}‚J?ﬁz ?°¸æ©}ƒ>á˙>ø.~H?®-5øjå>ê>√+ø—‘>≥#»Ω[å>+wßæc1jæY>s ºÅ÷:0Ô˝=bg∑æ‹ê≠æÇvæùààΩyùóæî†æ÷@:=æ˚< ø˚∑a√>=ßã>•˘?bú»æªkïΩÙ?ÿ<.‚Ω:ÚKæÛu>3%¶æm>@Zæ>∂%kæ“∂∂æ±ÆÄΩãæ¬>s*˘=óx>?M ?‘ ≥æ‰≤æ^±≈=Æò>æñ¢æíıw>Øí∂>.ﬂæ’oNΩ*¥á>æ/fæ/ùº†/îΩ5¡õ>YÌ§ΩfQ·>´SræCøEöæÓï∂>I–Ëæ2ÛæùO¬>Ç_ æ∏Q†>jHå>õ"¨æª¸ŒæÖéMæπ#ßæÊÜ√>Q™Ωænñ>∫/…>çÀ†?
+Ã>s[a?j¥=î`È=h]ì<ë˘kæ læ
+ÒæGñﬂ>î5Xø≥°S>¬Ÿ§æ±8?0–˜>—äY?£qGæõ0?Â-óæÇ’¢æ«‡?yıaΩz‰=òåY>-0ÃæàúË>„3>cb>¿U∆>e4¡ºYÁC=±»æ…˝ÿ<√π¶=8ª>Çk¨ΩfªæI40?JLËæ|ÿvΩV}WæÅj∑ªTÁˆº+bJ<£∂æP«>j]∑æØ6æhŒ©>v”*=ò˚Ω[\∫=ádê>Qzó>*ö   Bonnx::MatMul_37JÄ W◊¬>TÎ∑>l¢=Î≤>kI1ø˙c>ˆ~/øcf'>N‘ü=ËƒÕ=ï“æ¥ó¡>uÕaΩ¿É=Åf >õvãæ¯xf>'ı >º=îXñ>„Ñ√æ»˙mΩ¬#%?©Ü>¶⁄ÀæG$⁄Ω`IΩ˚≠
+æŒgvæÔã•æ„n§=üå>ıù>0BæRüΩTóæ‹d?=IQ_>}qQæÒT
+?(I=˛æ©ÇˆΩ‚nÔ>EÜÙΩä∞e>=D≠º4ÆuΩCÊæÈæAø–-TΩ ø=ê◊=⁄á=ü√∏Ω(XKΩo√øÅÒBæ≤ ø>¡#>l»ÄæÒò»Ω··gæ6áæ√8?zﬂ{æ\£è?GÑOªôtµ=≈*¢ø=`ï>ìŸí<Oæi„æûLø®∆ê?¥1>_ga=V^G?ïFƒ>°[°ΩçHµæËÍ¿»L>2¬#>?%îøb7?-I•>ãÅd?¶ÚΩÕñ∑=Jˆπæœ&Ï>KrßΩŸ,å>Ò¸>e_>€(ÜΩﬂ»æ˛Üæ:ß‘=Ê±á>•o}ΩˆΩ–ƒ›>·8ª>?^QøPΩ~|>Îiø⁄˝4>ñ@?¸Nè=P§«æﬂ%ÚæÕ£ºÈ@ΩM‹è>ê"e>ãŒø∏âPæé∂d>æÄ+?öIuøº£Læ∆~[æÇMæ‰&7=◊,æç 6?l!µæG•ˇ=cHÑæ∑–>⁄∏=©°æki=[∂µ>U”@?$MD>ol·>2/-ø6∫E=ÔÑjæÚ8ü=¿ëäΩ¶µ™æâJ>[M?pO‚ΩÛ÷±Ω˚÷?¥'Tæ'Ææñ≈æáGë=
+JûæœΩæ±Îl>ÛfD>b…wΩ√pø‰î˙8&Åæ$Åë>EQ>¡öæ∫ æ)üB>Î>≤·ΩºœØª>ãçæ™[âΩÂø£Ù&>J:>ïxøº¡øÃÇú=ÄS>f=p'È>KiΩ◊ÊrªÅw>GÍBæ∞˜ø%n[>•TÌΩr0Â<6LøØMÎ>•œ?m´Øæ˝ñæ$√=©πÎΩóô◊;È(3>…¯áæ]–æt@?át?µÈ$æ˘ÿ]æº¡R?8≠æÚû=ï}7øÃÏeæ†øFæ≈RÁ;∏Ä?ﬂ¿Çø≥¶Üæ‡≈ΩÅˆ æÜﬂ
+æ§j:?∫©ˇæ›ëø–÷æQ.æ0‘S<Ém©=–2º…ı1>vﬂ">~eñ>l“ºAïP;¨æC‰ß=©Æ>X{æ·ü?E◊|>>rí>¬ÉMæ‘u¯= ≈	>‘˝$æ+ôæùœƒæ¬Î#Ω˘›JævÄ>◊TbΩ¢ßÙæò8=<2fMø	9Qæ™@é>·ò?3MmΩE>ä ≥>~>#øÁ3U>·º\!+?(éà=7∫W>,éºj⁄Â=π=¸Ω¯8XøQCI<Lãä>QZïæÕ¿`æå“?ﬂùB=ÇkrøØ8æü=œk>ªŒÆΩw›> À,Ω¨B<=™,´øß√æÊÚr>œ”Ω…'£æ~ù"?ánƒæEjYΩií9øê3ºÅ|g<Æ¯æœ]ƒæÛòæ,ú4>òøûºJê\æhn¡=âö@øÙ/>jŒvæ,Cæomøˆ!&>¶˛t>}ÌÛæ«ÃXøÚ:7>Õj‹Ωß>D'óæA¬Õæ¬Vÿ>¿¸Öæuæ≠æú‘æ-ôi?3æœ>ÿ
+è>õ,ø~>Ÿe^>‹†æ¶l	æfÕíæ¸‹4Ω»éΩõz6øêƒøïø”˛=≥xTø^Ñá>F'‰=ºq ΩqÊ6=tòø£˛“ø ˜£>À>DêÓ<S?øQ8±>/öˇ=¯Õ¯º#>˘ç<>◊h=cΩøÀ?©>Ké>SñæÖk¶>∞8G:ó©Ù>fN> ‘‘=Å€¸Ω≈ÎÔ;\ìø8iaæ¬‚ïΩsÀ¸Ω_oÌªÂ;Äæ¢/0ΩhgËΩ∂
+÷æÎoUæœQ>£yŒ=˜)ΩÇ†>â*Ω@nzΩ
+[•øY?Yæa¸ΩaùïΩ9øÔ2äΩË˚;>6æ¡∆#?ﬁ‚¢º€˚ö<-Qwæ!x‚øÊ9ËæHS$=f≥Ω∫√∞æKø`#øhÃœ>ıøˇó$>5w?m†æp·?eÌΩ6éÄø…]#>Ÿ6>çπø?k>∫Í‡ΩõjãøVVÓæù¿0Ω^,aø§e>g Ê>¿˙Çº~„|>_øÈnöΩÂ›Ω{óÑ>‡øÎdﬂΩv?È≤={/æLò%æ˘> ∂Ωí‹º¬â>Ñgﬁ>j∞G>∏V>ﬁ{û>˚¿æPX>az>føÚ?>Æôƒ>’KÉ>îaF=¨Øô>≥ô4øü?7û>Â‡˝>l≠ı=¨ïp>[Ñ¥>≠ÄãΩPÆøO›-æ(+øÖ	í>4‡Yæ‰€åøWﬁ>Ã9øcã˚>b3_øÙËLæƒñ øΩcâ>•=≠D»øƒB>´{J>ïõdæ·‹f>RÏ1æΩ8˜>Xk7æØhûΩ∑P=Ù}õ>ªµ=∑jΩŸë? ,pæ£¸ >˘æèÍô=ßXΩ∞q?7m˚>Ô9ûø‘Éª=' \>êìYøÌº…=ûLò>¥%’>†ÊæÔdX>∏Q>3‘ æÎæÿ*=Z¨>>7ô<{≤õ>]üÏ>hÿøÛBÕæÎ™ó>I9næwõæΩ?ºñ‘¿>gˇü=»NüΩí≈æYÿ˙Ω¶yÎº˝’"æ‰⁄=øvê®ø.  ?ËﬂΩ» ->ó;õ>fÏm>≈3ø3ÃØ>s≥Ñ>®ìˆΩ:µ æo$ÆΩ±b¢<hÚ\>3∞>ƒæc'Sø©à
+øNã?ô1°>jTï=]Õ¿>~∆=øBW2øùwƒ=©È	>wπΩú–=ádoªM ï<ﬁçæ}%¿ñ9•øZ™>æ—MÙºcZ∫ø˛Û–øÏ’!>√ﬂ”ø%
+
+¿ÕeÇø °£=ëj'Ω»øiøŒQø¥[§>€S’Ω∆9ô=ñ˘Ü¿aæÌ~?Q®”øL<—>QE>ªdL>ØêÏæAMÜºt,]>Y,¢Ω˚é®>òµàæuÁwΩ˝…ñænÌ€Ωê)^æ≤¥=¬ƒΩB m>5Ÿ>·@*øıñã<ù">)8Êæ˝ñæf6≤∫,ê2>ƒæ7O5º/a>Ò∫x<çb=5Úæ◊?»æ¢+‹>\Bùæﬂ¡€Ω-*
+æö<>ÃPΩPF=WÈ?%®ææù˝Ìæ?ˆñ?W∆≥=…3æ3ˇΩÜLÿΩcíßΩï“s=π#ù<|_æBQ¡æØ˙ÑΩ°eo>n”#>RºOæ†uMΩΩ≈Eæ]T>√“æ;È	æ˜îº˚kû=ÚØ‘Ω¡x>~˜=>æ˘Ò(>%–∑æˇÌ>üú¸º˜ﬂoæ8›o>—†Û<\À≤æËªfï>•æÜÆñæ’;7=À“R?™]Eæ&küªÈå?b¢˜<âÜøÛa?LX©Ω5;òΩÊÓ9>%¸•ø[x¶>e,ÎΩ<ﬂ<ΩΩ‡€$øÓëú>~–º®ávø–G¿”≥¿˙≥yø©<Ëøq]∫Ωz}tø}æ^nΩ¯Í‰Ωúƒø–òñ¿]ô*ø5Ω-æ&o+øXcRø5LÙø"d»ø‡%´=ºo ¿¶æ´ÿIæ»P¿¸ƒ¿8ÌΩIÒW¿t/oæ9Êæê·ølÕf¿é¿˚lÁ>… “>ı º>’πPævÔ¯Ωéhü;´∑Q>[û|æ≠+¿>≠Â)=√ˇ†> ìôæÏì®æ&°æ0èøº–Á><◊Ω=Óa™Ω>∆.>˝ß;>a ¡æ…Âë>^+ú>®Î=–r >∆÷îº≥∞øvëæ“›=T#\>Ç@û<^∫qæÚ>¢)¯>Ïí%?Ùh?u¶Ωb4<IuºùÂJ>Y#4=Óá=µH›æÚ?+b>∑ûæ+…<c‹yæ¥0w<”"”øÿY>Ö^;øµ…CæbâÄæ¸›Èπö%?lO<æ&h&øÁ–Ω≠=æPD?µ.>∑Ì?ø5‚\æx‚Ä>Ãævê1æºaø•ÍÌ;ﬂÜæU*>ô8⁄ΩtÃ∞>(hí>
+à∞ºMæÆ,b=˝;€>†DYΩ‰†«ΩÔ5vøO∆ÅæF∑9øµ;Ωjbæ¬ö÷>Øc9>Ú;úæ√f>˝ô4=TŒ≠>∑ >§©>bìæ©EË>r>Ùí®=X)ë>Öo(>◊Í∆>Bx£æVÜ2?8ÏΩµ’æ7ˇ˝ΩŒ
+º<øD	>c4ÅæPÀ∏npï=/Rä<R±øo0ÆΩ! ø54æäs˜æ{»m=‘Ë>É`>’ìùæ_(æèé>æ∏üΩk*æsïä>3Lø¢¢?»dæÑ√Çæåv”>|Ù=û#èæ]{?x∆w>Qx∫=ldÍ>Rügæ˝πZΩZX≤Ωª>º 6æ≠œ?øFä<®Ñæ‡8;¡úΩu⁄á>ò/3ΩÌÿ≈ø’^øµó	=aéFºíæõRúΩ Áø 9Z>eô>(kWø≈Œ>˛P»<Ûˆ√æTïf>7™j>|Nø8∂=µd:æπyΩvy>H„'>P≠»<	 %=}°ıøÄôÅ>€QBΩV˛º}?pŒ>U]Ú>gI?€0
+?∞å='h>ÏnóΩöÆ˛=7ºM?⁄> æ›æ√Ò¥=÷sêæ4¢À>íú@=≤Ù <*ÈLæ∆<Î>’‰Â>:Å-ø˘îŸº}y÷=’µÀº
+ å=l∏i>ÛÀΩÔt¶>¶v=	w«>/¢æ>IÜ:Ωås>mOÉ=·æ?@†>u£¢>Ÿôìø˚4>CwïΩ√hø.›˜>\º=É+>πÎt=jDéæ@´3æKXY>´∑”æ@∑.æ/( ?pßBæï-ΩìÏ=>]ö˝=ôï;L0Gø7ı>¯≠=H/0>éı>«'ø}kÂ<ÃÇ>^Õ	æ3a¿ä ëæu[? ˙1øÊ˙Ùø3hø Nº>‰kŒº!?Ùª—>^ÓRæ≤l{æQÑ!?#O≥>Ûﬁä>jK6?Ÿ˝RøàoáºA
+øà!>`∂»Ωßò’>{>∆oæ∏%â<á°≠ºŸ]SæE r=X†æœ≠=ôFU=V`=Ä¢·>à>µæÜníªj–C>‹”√æ∑D{>ﬁEq=•Èæàøhø]Ï´æWiJ?‡6æîN?Çno=<¨ΩΩ-¶r?`”Îæ∑'<æ}Æ=%µΩÆéæG«º]R>‡ÍøzŸC>FÏË=:·]>KÕÌΩ¿
+?&m£æÛ=◊>	à>o® øBÏ∏>#nì>xqæê}ûΩ˝6’æ?
+Ùæª<øÙ¨Ñ>ûïK>ÈÃæ‡)EæaΩ„<ﬁg?Ão‹æÅb–ΩŒùÒΩ*ö   Bonnx::MatMul_38JÄ #`ÜΩ™]eæ-Ö?æ∏Éè;µëÿælûøõÄaøw>•ë_æ1áø(i:+ÉWΩÊÿÿæ]çïæÙH&Ω˙Z9æZv<{ﬂ
+=˙o5=í<Úà1<OˇæT,bøV∏¿áæÕT{>‹íº,§ºòÀû=ˇ^∂Ω5ˆ\<s~}ø¢ÿ—9(ªø˘›}=∑ê=Àÿß>„Ô§ø°>ø"?ì™øTY"ø*`∫æ~≈º>Â
+æ?p–æàY<j=K´Ì;≥8ˇ=QD=àNΩi◊0æ˛z!< kWΩÊ∑Wæ™°ôΩä%øâºÍó>-à(>vÒıΩõœ…=Ÿíø2ΩΩ/ù=SØúΩ\†Ωè=¨áHøS˜øÄh±æÑı<ÓøΩI9¿=
+4W=~äùº†úM>˙Gz=ÌΩΩÖRæ~;>8û</xéæÂ˘fø§¨æ|ø•©—>¬_eΩ£«Eø Ùwø_? –=”˝ùΩ `ü=ÂŸ˚ΩU$$æV‡Ûæ∆íﬁΩ'î<="¬æ‡¬l=…ˆ®æﬂTeøﬂﬂøªÀªæ·;üø2Œø•’Fæ#È≤øB±æQŸæ"%æ£˛⁄<≈Íæêã#ø≈OYæL3∆æm4ø≈≠Åøiœ<hƒyøÍEæªµ*>æC<íALæ!ò)=rºòæ∂⁄à=çá∂æÓcæÀƒM==&>ıÜæ* •øıø{–æ$ßJæ¸{H>¥sô>(“=Æ—éæ3ai>Mõdæi¬Õ<|xEΩñõ¨;M»8==ƒ;4‹Ω{⁄æëA'øD‚°ºTH$ºZ7k>µ)¶ºM&; ƒΩ!`Ï;/r¨æ`(Næ¸zG<C®6Ω ©ûºê=Fÿ<\áf>o—õ>ù{∑Ωz.˛æÉ;∑øRÈ¬>(bVøgí≠=ò'Ïæı≠}=Èvæ `>Ã)cΩ éÓ=Ü•={:é=∂Tòæ
+N#Ω„h!æπaªø.´§æiøöæHÇ¯Ω!¡Ω=€=öæ9≠îæÕ¨<·±>®˛ÈΩ∂
+•?¡8?.í‚æY•áæﬁRØ>HK?πv≥>“¸≤>Õ–≤>±≥:> qe=6ı‘>˚Â>¸â^=é≈æƒŒûæéÓwæ2ΩÜÎ∑æFÑ>?mçΩç{)?•hΩ=9æ0pÿ=ÓxﬂΩS&ΩA%>€¯æıcæ°Í¸ΩG£æÔÕâ>r±æ±ΩjYàΩ£©aø˝„GΩ+0?ä
+º≤7>FQíø™rkæö'ﬁæE•æ∫RΩbØ*æÜo5>1 ÓΩƒŒ”Ω5∂æ5h¶æb˜∞Ω;NFø¸áΩ∂πæˆ>˛„∞º$º>Îﬁæy‹t=º≤ô>–v;Í¶?ZÀ,>ÆØ$> 4Ë>Zs>5Ñ£>!_ó>Ì%«Ω&·>¬‘æ“ñ=>πÑΩ(:>£¿=œG6?ÏC∏∫U,N>Fõ>ï.’>±†>0≥%æHnæìéüΩ©oc>∞ëuæŸ›æN—Dæ´«ù=e§èº∏ZÄ;ö‘«Ω[“ =ˆÈØΩZ∏ö>¨¿Tø<§Ùæ|u>ë€høu ˛ΩjÒø¶ê>‘»¡º=ÑLæ0ê
+>Iì#>©∂ÀΩ="	>"æÃΩvÈî>øÊ=êÁ=Ø3VΩ©údø˝&æ s≥øP!•æ¬{ï=8L =ï¸€=¢ 9=Æ9MæìG©æD±>Z=“>ﬁí-øÅøD/>®ÂÖæ∞iÑæ3∑î= />´Ó˙æ,/µæú…ﬂ>ÈÜQ>û3.>M∞æLD5='_öºwj„æK!J>jc?f?Iæıâˇ>JüJΩèÌ<<å˙æØ¯∑=Ë%>÷æ	äÄ=CÃ$øµôÂæF¶√æ¸kæ|¶ΩçM}Ωö2?ﬂN>•ê◊æñ üΩ\≥≠ΩE?;é¢=-»5?WÒ©>`1Ä=’q◊=\J æ ã>P∑âΩr/‚æ e¸=°ﬁÕæííÇΩç€Ú>˝§æÙø>·FÖΩr•˝>d°\>7sµΩJ>`ô≠æ3'2æå`Tæ,è©Ωõ=˜÷í>§ø“|ñæ¥aŒΩohèæ£∑jæ≥Lûæ¯Œæ%1¶=◊|õø∑·∆=¸ÿ'ørßwæUÅ∑=4$Ωa¿Îæ*OîºI¯Kø$ΩÙG∆æÈô‹Ω—y°>UûõøA~D>ØÈ=ÏÙˆ<ûJì=‚:Œ=i∫>-/õ>ıÕ¯Ωü<TEsæF‡4>´Ab>qJßæ’¸3Ω`öO>v1ÁΩ(‡=éí^>ßasæ7KªÅiøGæïπe=É∫–º!|>à=$KæÒ√>GåW>-‚èΩﬂ◊√æ.…*>Um=&UÏ=/.ΩdÕ0ø«S?ykGæ2ãøã ΩÀq>◊Ù
+æú„>DCg>ˇö"ø√ ø¿{∞ø&®ΩÚø>TÕûæLºüæO˛=£WåΩ≠Ù>ì‡‹ºÄ„ã<˚°>•Çø:+(æø¢Èæ‹æ )÷=QÜ>@0é>$§X>U·@ºâ‚>∏œæ}M˜æª§2>Ö)æoæ.æµPU?ßj>,üæŸN6=àÿ‘>,ÏΩ>sú¶ΩPœBæƒıû>0˙?KÂX>£:èæW ZΩá«= ¬/=Í]˜æ'¯ø9‘Ç>J§°øuM?'“>ÕÌ?®Ç%æãœ=Øf=8≤æ7ﬁv<‹€=≥Ã>3íëΩÇ¨6Ωç◊>WÍìΩèØæÙûCøq˜æâqSø9Îmæ%÷
+øpñ}ø£=øE0 ø3æÊ†∑>õ©=¸Æ<‘ƒôΩ…⁄É:PS∑>ZEÌæÕø\>EE¿æ\&=∞K’æñ<øzº<!J$>e‰bΩæ≥ã=£>ª«º–h&øPåµΩ!»ò<(øscÀæªé0æÏn«æVmlø	@	øÀlˆæ7B$ø—*ø~4âºøa¢æìÓ∂æ≠ı^æ,K≥ªÂ
+æ=j…ˇæiˆø0oÿæ,û~øç]Iø˙Ï>∞Åæ7Æ£øÂn=•∑ºñ˜N=˙ıO∫≥=øwÎO>öï≠æs2+æåºö>‹-=ø8zﬂ>
+î?I-¿ºGEæ>Kc.æÚpz>œkøÊÙ˛>ﬁƒ>úµ?>éc}æØ´rº#mêæX¿—<Üπ>ÃvÒ>ç™∫ø/â>Ω*`æèÛùΩ6rA?=»‰>P¢à>ËÊCæK†ΩéMê<¯l∂º∆Óö>=û’>¨˚lΩX∂æ∞|êø«“…>ıjª=mﬂ>ÓE™>uÃ<DØøe±<_RÉæùb@?ìú>Ò`óææ“~=}pó=ÒΩò„>2ºóº◊πΩ"8ø;uOæ˘‘–=øáX=Åyºü	ı>ÕΩŒæ_æÙƒ»Ωô£?≠òΩ≥EøQ{=’é>T¿^æAπBæ~ﬂ?øÂ¸løQ∏ÜΩcÙŸæ0øæ;¬Ω Àã>ﬂNÅ>Iôµ:Y∏>øwÈ	æÒÊ]ºàFΩœ<ıæ(>æÒ≠æ+“µø¨™ΩDU>ÛQ÷<Ñ ˝æ!ã>∂°l<·Å˘=@J= ÎΩ{≥ÔΩ˝8È=Y¨≤=I≠F>bº3>êˆ¿=‰G˘=-#ædåœΩßp->ÿ˝ü>[√2º†öæjÖy>€ U>ÿÇw>a:ì<πÖ∑Ω”k$æ'ü?=¢+å>Ó1$>s>:ÛTø+ÙæıS=îx≥>˛I>Ó)+>ƒ¯æ‹°?ıﬂ˘<÷V´=≥¶æA•5ΩàrÜ=¶rWøÿ˚Ωæiæs∂æ}HqøC2Z=.˚æñøìYâøh^éøP.Ó>âhÇ;I¸æ6±>]=ää¿˙cZæg}ÎΩï[øÙõæHæ+=™ãøøV.ûæ:ê?˚,∆=É…Ω¯”¯=a/>A £=ç˘∞>R∞ƒΩuç∂Ω≈Ë¬ø»ltø≥ê„æÅ tøN¯ÁæM0ÑæGéææoP%øÈuìæ"ﬁëø&#´æ^¢∫Ω#?sæ´t<yﬁpΩÛY¬æ´ˇ¨æT‡è<≈´#øïÍæÖ&>ÿ;~æÈØÜøæ•ä>"æmZñ=o•º≤M!æa&2?·¯Ôæ•q√æˇËæ{#Hø¡—€>_e•æ	qßæòÛÉæîíæ§√â=*m9øÉj>â?.Ω>ø°G>ÎˇµΩ±qï>–Cæè˜Œ>∞¶´>Ãê=øÑ>†=¶? Ω¸2æ9Ùp>k∞˜=∆ù`>ôd>eâæ|çÓ=˛¬+æöy=p›o>∞"æª?"ƒΩî7<»7Eæ4≤gøj1^æTøIÎÁΩtDèøªæ4cõ=sø3◊æËô<tHæ…æ>Y“º °b>Ê,ægﬂ˜=˚víæ{SS>J
+æ‰›	æ¬UêøﬂΩäŸ>m>æE\g<ÜÅï>ÿÙΩle[æò*æí
+=^¥á='n1<q,çΩemN>£c_æS≥Ë=59j>ıQÙ<BÆw=6∂Ω
+‹uΩÀŒΩ–ﬂLΩdEΩ'qæù√π=&”"=Zæ">)ÎﬂΩd¡Ωç+>ì`h<ËF…=˝nD>d∂¬Ω·#>u3>¸*üæ⁄…∆ΩœnøãƒÚºÒò≤=ºŒæ«xøq‹øî“>øÄPcøæÍﬂæ.øE¢πæ»éoøPféø∫?AæYº√æA≤2Ω‹ê‹<‘æ';øKL<øΩ)EøÆ≤=„ÃèΩ	‡Ω∫÷ﬁæºœøæÏa5>\†o=≈•¯ªî2j=f£ßøã@æHXø-ä*æ@πΩÎá˛æ8øÕæﬁ’«æ/∫Ãæ´hwøö} æË/i=¡⁄ëøµ⁄ >«TSæÜ¶æs¯ãæWÅΩ1˛¥ªu:2æäÇ◊æF=ÄΩAaPø‹Í®Ωe®‰æÌ"Ω˛˝µ>"øÂ>–QÈΩ+jÏ:wb!æÿ“¨ºvÛå>	ÅæÑ©øÚ@ñº¡y˚==\îΩÇµøÑ9≠æˆ–•>-ˇµ<$9øzÊø∑?=∂>„æiK°æÄTΩÖqKø±ÛºUC”<¨ì”<µÍ‡æäÇ>gõqæDÏZΩhòËæ¨•C=˚Fø ïqøÈ!ç<™Å>k
+æˇ/í=Çç™æîD>@W‹æÆ–å>ﬂÁª>Ö§G>§K=uYî>7‚›æ€÷†æYÑM=°>¬æ‰h_>ÉSÎæ[´>`∏?+?>¥Ωb¡Ω‚>ìr†=F¥1?˝®,?oB4øΩ¡É>pæ'æ	´A>}*˜>‰Q⁄>ı“=˛?x</§>Çèy?Ô(j=.ì«=∑¬8=+=ï‘Ì=huWæIÎ=”a≈æQb„>àM8>
+ÿ“>äPæ‡∑œ=:π‰>l;æ7DΩ€JA=õâ=wT∏ªjbÉæF^èæ,◊æ.¶5æ *Çæ‡yæEÆOæÅ8≤Ω˘Œ‚>|´˙ªú£!<∏)<=≠á=*ö   Bonnx::MatMul_39JÄ ¢∞µ:Åüp=√‚:>∫ìæH=˚+Üæ§=pwæ™æÛ2∑ΩFG>>~>:Ï¨ª+ñæ’ìäæµ»ûΩÀGæ›4zæ8ï¢æÈ„í<π¨…<å˜Ω9($ø~∑h=‹¢=<˜⁄= ÄΩ⁄∫ΩwT¿º"lhæ¡I=ƒÀeæbÍ>O†≤Ω(G>\4øWÓ>R√¯=˝p	>·æu˚À=![æÂ”gøÓIøÑ?5¿æ}ˆ3æ∂Å>É-mΩ¬n√æàÆ>∆À<'§Ω0°>>ÛÇ?ñ£?¢õƒΩ<t-=$Úôæa´>“!¸>◊Òø<ªÅY> ¯åæøæ˛ç=∂≈%Ω¿≥ÌΩ9ÎNΩ¬#/<kíΩæIæàr=êê´æ:∞Ω/zº;∏c$æVMjæî3<+Pß<∑-d=n1¿=Í76æ◊Ùqæ∏˝<ÊÇæñ^û=;<ﬂ VΩùG‡=⁄©=ÁEmæËoà=¥mæMX∞ºù>≈í>æÒ7„∫ëaÑ:" ¢ºCæËZ6æP;ø—'æ|‹ÁΩæúIb>î◊ºxp|Ω™SπhuhΩ°Ω‡=V&Ìºjœ"Ωƒ¶∑ΩH•æo7}æ‰÷ˇΩZ+ê=’F=µKÂ<Äﬁ˜;Àæ™<j;ª⁄TΩÇŸüæ˚∑=s∫êæÇ=
+>£º˙Ω˛øÒÃ;¡Ï˛ªÁå*øÛè-æ.+Aæ^∞˝Ωﬁ◊¥ºÎ7=»l&øª!l<œw6æ®¨≥=˘ÈdΩPù?>–YæSÒ≈ΩËû´=Ãoq>◊	ø∫ßŸΩÜΩn„<"»ΩÌÚıΩÒ◊¨>ö≥9æÒëΩ1	˚>Ab>Î‚d>†JÛΩ∫E°æYñ=´SDæ»Õ>oº«=˜·>Y+ÃΩ‚F‰>-:ΩS9æ®I∏ΩXNˆæπ<ê=kÇ$æ9çLøõù>‚·Ωê5=∞z†æ€6”æ•HáøG˚°>E">GÌ∞æ»-æ°x∞æ∞Ó˘=4{¡<ˇ >˛r†æUZ=§|¯=Ê∏≤>twæióQ>æÁÁ>‡Ö∞=ã˛Ω˝ΩVù?œ?óØ>√	?t >ØæüôæÕ?Òq¢º·óçΩÊ“£=Äæ.àæåJ„æT]æﬂ”y>Ü/ˇ=TnE=“≈æÛë =§‰E=ù;=?∞ã‡æ’∂îæ3-|Ωl·æ¶Ü >cÑ?
+e$ø¶8æ®*ælÕ¶=‘Î´Ω÷|*æx~´>ƒHñæûΩ?Ûm¢>-òò=gò°æ˛%>‹·ºæ0eßæL_≥æ˝Vô>C˘
+>óh™>WYõºó<<s:¢>FêP<˘WúΩ˘}?R
+øﬁ⁄¥æ0 ?Ÿ@Õ>≥œ <Ó¿øÁ±Ø>Ü©Ωóh÷<çLæq[A>U£ìΩ –â?G◊0æÂGÛ<˘5?ewΩº=ÁI>¬IéΩ}àŒ=
+åK= …Ÿ=)C)øˇãâæ  æd<>∞\	>⁄OÃ<≠çΩM∂XΩOWi>p\øπ†=C[ Ω"ãß>\ﬁãæ¨k$æ(>Ãæ±∫J?kKæÿuUæN≠d= ⁄Ùæ®lƒæ5ÿæöB›æü¿<¶áÿ>êq˘∫“·æR]æ;C=iŸ!ºÒë€>e‚=|ta?è¨ì>;‰=ëﬂ=Ÿ‡z>˜O?k#M:h˛æΩO√æYñ>!û"æDÎxæ‚€ÖΩ¡ãÊº¥≈ø>IíΩhgæﬁù<áó>¬yæµwÄæu/?cÏæ‰ÕΩ<ï±ﬁ=ë(™=„æu0=Ab>_ä= ™ﬁΩô(zª[Óæ>Ò—Ω·=·6Ω“ıµ>ıæ>à™àºˆó\ΩÑLr>—¢\æ *±=ìóFΩláØæLŸmΩHT6=Dûæá√VæJæÁ‰Bº‹ôÏΩ^RΩ4^˚<⁄nÑæŒ¥=ô–ø=¬d<Çuãæ·æµKä=«´8æ¿àOø$˘,>öc°æ√ÕhΩ"≥/æ≠–‹ºë?Û=Bßê>∏ÃæÈ≥>æ∏ä?~êæ;s≠æ`øw˛æ7ˇ>=CÙ÷=}æΩ{k‡Ω#¬æΩgI,>ËÉ≤æ°Ü·ΩªÚW>ﬂôæl˛çæ˜g>]l;æË)>¯Û\=‰æ& >„ã9Ö(æˆ`åæD≈OΩì…V>˛’IΩj‰ãæcà⁄æ¥ëæiú∫¸∫%æ•rπΩÃπAøÃ@Ω¥Uæ@O3æ#Ò8>˛DW>—ë>[“=™0æQ’∆Ω•±îæd?Öæ#ı˚=Y:◊<ààÈº.:d>≥çæà€/Ωÿó=dà≈</R(?Ï˜@=Ò:æö‰æ:àÂ<∆§=≈5>Õ]¬º∫¯é>˙ÄyæIÎæ	À)Ωi
+Hæ’æ1æ¨Ø%=Pp¸æ‰+Aø…´zæã∑]æöBΩƒ…•=bï(Ω<Æµæ£ÔªSï	>~-√<+ﬁΩ—ÄΩ:…æÚæÂå9æÖ:A=b	ø‡f>&∫/=Öﬂ≠ΩºBªü$	æU>ª"k=í7_Ω}Œ>f‘¯Ω∂à,æ+æz%ø>œÅ#=êπa>Á`¿>lGæqÖ=IPÒΩ˛-¥>8Ωû>HJwæ®ªû;T]#?ÄìPΩ£[ûΩ˙”Ï>xÁQ<]h”ΩZì =8cÕ>®7Œ>u¿∫>È?-;@øQAäæ∏AΩR∆R> 1ó<¿ı|æëQ†Ωù≈=4ædüÏ=¯≤>3ï/ætæ÷==?Ωéæç“=J„ºΩ2ÓΩ¬ˇ<ˆb$>7>üæÌ<ïˇùΩÎÀñ=,¡2<ıóΩDs4={vﬂº”aé=;!T>ﬂÃæÉúú=®>g£Ωøø=BóæåæΩB©ÍΩx◊=j/ˆΩ|∆æ!Fzænÿæ!—æÔuΩ¶–æ⁄√ø∫[û=m-==oEæı°«<˝Ù.Ω™·æ
+ò!æ›LEΩ∞’8ærEæAa<ÀÁøæ	lUΩ®ÈÜæ“iÃΩÁSRæÏqﬂΩÕø¡Ï%æ@›Ωvî
+æ÷Xb=f©,>(`œΩ/7f=ó8
+æª>Ω™>,ïæ'.ëºx#æuÓæÓΩJ[∫ºÅ%_=Ω9É=–£ºyπ‰Ωáú= Ó¢ΩS.ΩwÕ(æ≠_∫=OF@Ω´˘ÄΩ¿'8æ"§ä=6¿ΩCÍ*>VÌæê>ïºˇ6SΩS≠æÕ‚√;h©êæ∞:æÙæâ†Œ>Á£u;íÊ=4ºcæ¯Õ∆=Â¶F=ﬂœ√Ω$®î∫EŒ‹ΩÄˇ=ÀBõæ¶4πæ}á#æıæà_tº◊<T£'æ´ ªΩ%4økiì>›∆ìæ2ù;™v>1áºRüø∫Fóæáê(ΩhLæZÒãø†wñºsD≥ºúÁ°ΩâjJΩ≠”Ω®ãT>XDøæER=xû›æ‚ç<>ıi ΩÌ¶¢æ‰kæwãÓæÃíΩπwıΩ4 ´ΩZ¡ΩË≤9æzH;ΩyoÂæúüæ8f≥æ¿ºX=gÕ=±bæs∂fæ°]$ΩlS4æ€≠º'v>æÈîO>2}&:Ç.øl¬ø'!Ω/Ï°=&ˆÊΩ…4æ“ﬂNΩˇá_æÚã:øÆ¶˛æ$ˆÚΩIø¨Ë>m÷ñ>vWñ=ß0æÖÚâ=≥ÄΩHp#Ωo–}>Ö∏ä>Ñá‹>√8çæ	gö>∞8æô≤ßæ`?KÀ~Ω≈ æ»£ä>¢hÙ=‚√»=Ø-;>G	Í>“#0æ˘Òx>iÇÈ;èAÕΩ√cΩ=√ñºC?&UÅ?¡™Üªƒ¢>}
+ø¯K	ø,a
+æôÍæ;ÙæQΩ ®Væú*AΩé¥èΩÀdæˆ&>ì)0ΩK~Ã>Æ\æ1ûΩ‰˚˝æA
+7<˘£√<(ü›>RƒΩˆXæ»◊ΩËIz=≥ƒc<a_>,ı†Ωõ°ΩÍ<æΩoqæ≥≠ÁææÖæW)?®’2ægÓ’>Ó»BºoP>ÿÙ>´ΩÈ∆æ´Çºq?t>ë?Õá>>9®æÙñ2ø‹õæ˜ıvΩrO‚æ9=æ_ræ¯	u>2åå<èåq=,‰Ωåu=@lı<◊∂ÉΩRÜ§Ω/=Të#>ØΩÑΩ‚&T<”ˇÂΩ—…>1æË†Ωœu¸=›>(îΩwHŸ<Ô">tO˙ΩÂæÖ·
+=≠πÅ=Á…˛ΩË∞RΩ$∏Ú∏cΩ‘ΩJ">' ò=÷»Ω‡ `Ωπ:Ω-Ë< £{<DXAø‹Ò∏Ω5Ω>Jf>Õ	í;e`Ó=Lıø!v∂æ±üΩe/?'2ß>≤Ç≠>¢∞N>u⁄æ‹Á>Æı‰=@E>ærÛèΩeO,æ≥ïí<¢3?˛˘öæñaÕ>Ü˛K>K‡˜ΩãÃ?˚ÄÏΩZ ˆΩé?dúæ¿æU≠ôæÀÈû>[8÷<ˇâ(=xÈç;[`º
+ü¯Ω∏7jæ%∑Ü>¥ã„>€Éä>»∏ù>éˆˇ>&å5øærKÇæ5+ˆΩSô>Ç≠<Ω˘œ3ø˙Ùæplçæ.Fˇæƒàiæ≠/¨=P=˚Niø˚◊ò<"wˇ;:Rl>®.ÊºrÜ=/!æ!9Vø'J$æÛ~TΩ:Bdøò‚æ=mô=pæëqqº≈VGΩ⁄\øáµQæ#øΩ˚çå=à≈ºòQ9ºáï<VöwºÿY6=˘Î>√v¥æMo ær€˘ºåUæèæÛ ÖæÄ€T=‹b<æ£+dæ›rå=Ù¯ æ˚è=|Ó™ΩR ∏=XL;m@JΩ¬Ùº√¢ôΩ±ÜSæ¯õæÆ<≤=´N;Ω»,æ(∑ÇæaoyΩ{=#Q˙Ω/B”æOÇæ…TæA1æ.ZÜæ˘,ø<Ω‘ΩUÃ˛º£ÇjæáØ⁄Ω:Î=_59>àõΩÍ+¿æ*”¨ºŒD{Ω6ßºû‹Ü<Ñ©”º_%&<ÆdΩßæpπö=y>˙oº=–.s=oÑˆ=áÛˆ<9Ù±Ωó¯:æê>ÙÇæóª=2ı`<oªΩjò/æÔŸ$>Íä=Uü<nÁ æFP®=äøΩINÔΩ‹tÆΩv&>R?æP˛âΩÙßΩN7«æÓûµºxo=±Ÿ=)»=Á]æá‡Ω‰w÷ªñL¢æ“ùΩiIÉ>ΩI≈ÑªP>ÎΩÎõΩ˝›<·Ü}<≈bæ3¸üæÊ©oæY5Ïª	‡»æ?™æ ª>Ø%0æ–KHæﬂ£xæéŒt=å;~æÎ~Ω·ÜFΩ∞€∂==î?ªg>[êëæ~`^æQ¨#ø3—ÕæËŒ’Ωêæû¬æ‡$=≤Ö>`b=øÂÈΩ™=3ø—∞æxÏóΩ˘Ÿ≤æ‹¢næîpkæneUæ⁄w•æ √(ø,ª=å0væÖ ?{”¡=•a◊æ<∞>éæÎ˜ÒΩæT1∫*ö   Bonnx::MatMul_40JÄ gcæd—Oº±ø<º¿+æÌD> Ë‡ΩÅ¨àΩíÎÄæñÌΩΩÀÔ>Ó∑Í=h¶æJÈ=9ÆŒºYÖæ±•º®U>>L∂∫∫—–Ü=ÄÓ<ÛñWΩp[ÿΩàï>(3+æΩ‘‘ΩuŸPΩ=ÔÇΩåiª®πDæ%*<ñ¶=÷ÜΩp¥·=øµ©Ω∆Kúæ¡Ç>Å¥áºpûœΩDÏ[æÇSΩp@ÿΩ*üDæë¨.æ¯û◊>ˆOæœÕé>ú≠˘Ω Ö<◊âè=µÃæ:9Hæ/‰\æhtA>?¶R=Ú¢çΩ(§æèÈM<0‘>ko~Ω‡‰ó>âóïæﬂÖ¡=Ç'Ë>›ﬁÒΩ v>]Äπ:2Næ~sá>€R†=€g‹Ω,Tñ∫+˙æ∞e‰=z\=ÕØÆΩÕw<æóIÉ>Ë ΩÀMRΩπQæg„Q=∞K$æIF∞<¡Ã	æuÈ<vÕÍΩ€F=…öÆ>¨Û>>Í» æK}æ:º‘r>¨Y/æÄ\6=A)=Ë–y=¿pGø2¶Œæd˘òæ@ô<)uº±[7ºÑ)∂=ıõΩ#2ÓΩ)å]=yÔº-ó$æ∂i>˘éª∫U>\YÖΩ,QêæÕ—æ®L-ΩMΩ=R	æÜ‡Ö<6â#=Ï`¨ºœ∆—>ö?)º	°˙Ωü†=º ≥ÙΩ¿ ÊæŸ®ìø≤@®==”Ω¿?">SD =·M‹=®àﬁΩù´˜=œÿ)=OghΩ˙ç≈=Îà >Ì≠úΩ Õ6<—,<*Xu=êëíΩ¸”]Ωàï
+>¢á“=¡f >õ=˜µtΩì.⁄Ω˝'ÃΩlÊ>`SΩG˚Ω=™UÂ=Ä-HΩñ{ë=íO&=)∫ﬁΩ
+OÊΩ≈?•ºœ"á<-ˆΩÇ◊—=çºUæ‚é >=ÕûΩ$Å=S!¸ΩXh∏º˙'I=≤Dâæ”mÑæÔ>.:æÁñMæ5äP<_ıÍ<Ì—=ØXﬁ=y‡=o4CæBìüΩÍ~æ>¨Xéæ=”=≤ ´æEá=}'ü=}0æÑQæR¥Xæ‡ôøı¯ Ω∏ñ><| >hAæ∫>aæŸΩÀ>nN>°f^<â@åΩ–Z ?q6>9=?:Xæë¨æ KËæp>Ê*Tæ˛¨û;Ø˚çæÏ“ªΩ‘ºzΩñ?ÉΩv¸ö>~)>æyµ∏æ”⁄n=€e`æcvdæo„"ΩXﬂ>sæ^≤%>·o#=†/¨=u¥=ØúΩÒ"^<m?à= :#=.˘I>CÑØºπ˝ˇΩ
+æØ_—<WT”<óòıΩ˛û=‘ÿ>·úΩ6ã>¬˚ ΩÜy¸=¥ôûΩ$j¡;ª«æÊW =n£:=gM`<·Ø≥ΩkkÀΩ•Ù=Ø≥◊=´@ZΩ{¶ˆΩŒáºNŒ©ΩåßF>ˆr>Ú^CΩMB¨=C∂<Gﬂq=lqæ;
+\=˜\O=#qº¿÷=‰ñ›<BÛÕ<[l*=º\uΩ⁄Ö>yøt=‡iY=~C¸Ω7gÉ=ë‹ÚΩ≤ƒª>0Â=€=8>ÂÂ<»<b*8=·à=Ãï‰=l˛HΩ5•<æ∆ße=ñŸJΩ√\©Ω”9œº6 õ=^:⁄=@">RÈ
+>m∂Ω∫(XΩåæó´æÁœòΩÂ¿=ú… æ¨⁄=çpÁΩÁ>ŸZ…ª´˛±Ωey6æô(˘=ßÓ§=F≈ΩvÃ‡<
+˙ñºÄ’æ˜VªqŸëΩª˜!æóëàæ[+[=4⁄>åıªΩ)x}Ω8X7æAnæêπΩuæn:ΩΩq_=´eΩVìä=¬i∆Ωﬂ6UæƒÁ?æëz¥Ω∑ÈæÃ˘Á<*,wº ´3æ©˝†<6æÎ:ÅºLßó=(/øÉÈ=X√∏Ωè#æ]∆zø\tÜæ:£ØΩ4$ø“|æ&‰Ú<¸…#>"ˆæC:Á=ΩÆ
+Ωhı˜Ω,nîΩÁJ	>Ò¿=3˙ΩQıKº®íΩ{Ü9=†æaŸKæ‹JDæﬁ˝»ΩHhÖ=RüΩ◊R€æ•xc>	`Eºb¸WøXÎÂΩg"æ«»íΩÕ˝æ˜ÿæQ≈<!ΩÏ˜èæ!mæëYæŸŒæ(=Ù<s'øâHŒæ≥$àæ¸3≈=ÁkE>|éøa˛ƒ>BÏ.ºëÔ
+æ(bærΩö:K>ºˇΩ˙>Ω£‘◊<<8√ΩÔ*;ºW∂Ω“»«æä#®<È˝Öæ-ﬁ=P´=«”]< r¶=9>–†ŒΩ.aÎΩ\Û&æpﬁäæ¯gæﬁ5æ%“ıΩT+v=üU">´Ê˘Ω'G√=ú,Bæt|≠º:ØΩå<)ΩX≤ç=ê>Ω¯c*æY˚ÇΩói0æÖæ!yú;øÎ‚<ìf≈æù£=L‘XΩµ≈æ•´yΩP"+ªm˛hΩ»´∫{1>=,Òá>H"œΩ°ñ∑=uHs>†©•=kÉfΩÃå¶>Ü 0=5ïO>~`æi?∂ø>7ú>!õæ:ã0Ω_y«ΩÃ5õΩU/:æ<(æ zº®∫ÏºıﬁˇΩ7,>ƒŒN>∞MÊ=61¥<ŒBΩ⁄Ã<ækˇV>–ÛÊΩ¯KÊΩ…∑e> ôß=O¯ï>≥Œ¨ΩæCcÕΩﬂk < (qæÆÃòΩwGUΩOhæD≤¸º”-Uæ}“J:t…Ó<¿æ•!Ê=Vﬂeæ°’ºW6T<ﬁƒ∫πïæào‹Ω+˙=âƒÑΩ§pü=^é˘Ω(ﬁF=Ïû∑Ω7¶=)Øº‰khΩÕ]“º.}>@”9æ7;ıΩ˙\ÏΩ„·;[ﬂâΩ{è(> T=⁄è2æ>rç=áÃöΩh;æÚıñ=˚0*>®
+>g∫ΩƒÄ”=Ï˛=,eΩóJo=Û›ÊΩíØ£=Ä‡ò=£≠6={t=V=ıΩˇ±ûº∫>a±B<E…Ã=îò“ΩÑë=Ÿ¡∂=5≠(=!HÅ>-À%>Òè1Ω-0æÏ~æÈ¡§æÂ˛ëºô‘ΩDµæI{>°_ΩÑE.ºaæ	S»ærΩa9*ΩÊÜæ∫uµ<ã¶=ø£îævu=5dR> éΩ∞ßS>®+∫ºª =2{ñª ´ø’åÁΩô≥æÜ‰=k—ŸΩVL!æÃµ|=‹`ºyJ’=?úˆ=4√sΩ}dØ<¢|8Ωæµ„Ω⁄°<Ω)£=<m∞Ωﬁ8ΩËÙÅΩ6µÎ=u=8=É”•ΩZ©æ§æŸ:Ü
+Ω=ããçΩ∆°<N>Àü8>Ø»ΩYÇg= Ωß,æU[‚Ωÿÿ≥Ωõ\>†æßkø=…?ººŒ ÖΩ√≤Ô=æ&Ωæ»ô:Ω)ó=®sµº£Û$ΩZ§<è–S<ÜeX=y~Ê<€å…=}Úh=öˇÕΩ†¸◊ºYQæT4Á<l!=K•=‘rò=AúÄΩä);ólóΩÙr˜ΩÒ>¬ æ¨ïΩ÷1o=∑>«Ω`kæ˚æ<À&æ±É!æKƒÛ=ºëÛ=FÀª=Ÿ˜Ωêÿ=òÀ'Ω|N;=T
+=5GâΩà=≈j’ºõ1æÎXF=˘õ»º'∞=ßFæ|˙?æ¨{–=;àºŒ¢Ñ=5Ã≠Ω\aƒ=aæ˘=0≥«º0;!æ∂˚<'€∏ΩXæbåPæx5ÓΩ:ï>é‰÷;Í‚<Q{Õ<òû<√îº5¢.ºŸŸj>g(⁄æKËÂ<°íΩ±Ô!<‡k§æî‘æZæ» üΩªe“>ËÊ æ∏˙Øæ:Øææ€Dø[@ÍΩ!a>∏ï>+I!>éu`æ›£>Ω;›ΩüCAºÂæ€/æ«<øz¶ËæÒÄ=∂¡Ωû?æØ=:æÓSŸ<=∑≈=qL
+ø∂y≠æRﬂí=í2ó>®·æqT.æø∆Öæhà5Ω∑ôeæáõΩñéûΩıFæ60
+ø˙ﬂ_ædâΩùôæ¶…›=È!>rüb>MÌææg?&1’>~mŒΩÜl‚æ©ãøàîaΩüC=ΩW=∑ƒB=VIuæÏˆ”ºëç>Âí=¨Xæ+$RºCãiæõﬁ>ı»=˚◊>Ohpæ#sæEÀ4æc∆<{$ßæ•5øµ˚X<√=sÉı=~ê¶<‚
+Ê>˛LÎ>ºÔíæq“îΩI›†>ö÷O>Œ¯
+>œ Ωk<DºPææ∏¿=÷ædv	<H ã=âÙ†>G«∑Ω∞á™>8y§Ω‡ÄìΩ›N>ıæ©dêæ‹ãÑæ≥k’ΩqÏnΩIM≥Ω!_æ˝1ﬂ=e{>ü>;k◊;aÊ*æ!‡⁄ΩƒÆ∑æ˘º∞o±Ω7U>ßπºæõæ⁄™æ©í=F∫T=œn>F9E=–Ë =î“⁄Ω√ÛÅæ•Êõøœo=Ü—ÊΩ‘í„ºä—≥Ω@pÙΩ:,¥=ì=†Ω±Ã∞=&°Ω’xBΩûbMΩ9»™=FÿΩ« ?˘>Æ∆Ω5æy!«Ω7æ·”d=Ëƒ">”ª’Ω§QåΩ¡Eë=Õ
+ËªúópΩÆm»=sLæ%AΩzK¶ΩÏ{Å=Ììá<|nΩ@Yû=HöΩ‚ÃÂ=Ìø7Ωˇ¬Oæ7î6æÿ§&>îë÷Ω,ØB>$≠=ªÕ8=…¿!æ4 Ωû;û=~XO<˜ÒKΩøy><ãÜ!>Ÿ|=ÙjYΩçàæi]æèé1æÅ†_>ÕÚ„ΩÎYï>[Ù|>≈ó£=ªO øâ{ΩRæ˘Ωg7æo&>√Âº ⁄=˝∆üΩpB$æ“ê·ΩÃü%>R,∫=pÊ§=ßäΩ7ƒΩÕD_Ω≠X›=ïÃ	<0¨pΩóö6>-Åæ¶√@>rÌ>>Î‡∞æøqæ√ΩTˆ"=ËD;‹\ö=¿‚ÎΩj≈Ω`	ÕΩdj<⁄BÈ=}ÄF=b !Ω˚ÜΩm∫◊= lΩúø´æ.õ¥ΩÌ˝æ•2w=⁄Ú<CŸ<æËÎÇæÊÑ=\©æøk7æ€ÕΩΩ?#>¯B•>ı¶;dfñΩ≠ùÀ<AË
+>˙≈>h[≈Ω#^A=ûÛ)>1M>åc’Ω'ˇ÷=‘jÄΩ<¬¬=á‚¸=&N=∂Ï=ähàΩÕLæ√x+æÆ¨ÿ<zŸ8=™∫≠ΩŸıÊ= >æÄE¢ΩÆŸZΩÄÇ˛=’jS=ñúøºò«ô=d¢á=…hzΩu‰>TÅ‡<1ÖK<Ò_∫<cƒæ⁄b>Â*>ÉÛ¨=N√<i$æ=:ﬂº¢)LΩ¥zÅ=Y≠H><P>E4!æt˜Ÿ∫ªµ=©`òΩ°æ∏ΩÅdΩ[B4æ‹$≠<µëiΩÍ!úæÁX>‡Ñœ=ïP>	\%æÊ⁄>¿q*æ◊&ºΩÍJ.æ1ƒeæB˘¨æã¢->o‚_=kıG<xØºú≥=Â'kΩ	S<ÿX[ΩÉÑº3ÍÉ=˛©ƒ=R\Œ<v‡˛Ω“è0æuv¸<ˇ∆dæióæéÕÖ=\r;æÿ>Ω<‘=¨ƒK>|≠Ω<÷ΩÀó"=öL"=÷#æV¯»æ*ö Bonnx::MatMul_41JÄﬂïΩ¡[{Ω®?>>˚4<co{æsmΩBJ"Ωûä><|è=˛Âó:2O>oØ€;⁄‘=î
+>4˝Ω”Øn=ã=¯õ=ûÖ)=˜Æ=HÑºGÍ;ÈrΩÊ´œ=ísé=\qqº/a∞=™n¬;›ÎAº·Xª< ∂5Ω:4∏¥ˇÍ<•vµΩ'Ï^=&i=L—ΩÄ|∞º‘W)=iÑ=3òM<ﬁ*=º∞æÃΩ¶Ωa;];˘z=6>Úh∂=·mZæ∏®lΩyOµ=¸1æÇ¸º“ïGΩ@0JΩˆ≈µ=3⁄K>
+âæ¸vΩóù=ö^=sÁ=ÛZC=Œø=dΩCîÄΩ˙Ç˘=œ>Ñ=3®<eΩ<_‡ºÁx’ºS)ã=ëÔΩËùΩÌîŸ=ÛQ˜;‘Ûû>€‹Ω…
+<Eäí=ñmæ]ûñºWÔ´=∆Íï=RŸΩ€I =aì√º∏CÒΩEÕº≠5ıΩ†ûR=Ã3JºåWW>dqaºZ
+onnx::MatMul_0
+
+
+b
+35
+
+
+B	
